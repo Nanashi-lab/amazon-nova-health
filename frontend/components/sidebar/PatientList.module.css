@@ -1,0 +1,54 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 11px;
+  background-color: var(--primary);
+  color: var(--text-inverse);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Subtle scrollbar */
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 2px;
+}

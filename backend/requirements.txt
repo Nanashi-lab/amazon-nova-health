@@ -1,0 +1,13 @@
+strands-agents
+fastapi
+uvicorn
+pytest
+httpx
+sqlalchemy
+psycopg2-binary
+bcrypt
+pgvector
+python-multipart
+pyjwt
+sse-starlette
+boto3

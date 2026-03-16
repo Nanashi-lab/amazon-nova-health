@@ -1,0 +1,56 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-left: 4px solid;
+}
+
+/* Severity variants */
+.critical {
+  background: var(--critical-soft);
+  color: var(--critical);
+  border-left-color: var(--critical);
+}
+
+.warning {
+  background: var(--warning-soft);
+  color: var(--warning);
+  border-left-color: var(--warning);
+}
+
+.info {
+  background: var(--info-soft);
+  color: var(--info);
+  border-left-color: var(--info);
+}
+
+.icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.message {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.dismiss {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.6;
+  padding: 4px;
+  line-height: 1;
+  transition: opacity 0.15s ease;
+}
+
+.dismiss:hover {
+  opacity: 1;
+}

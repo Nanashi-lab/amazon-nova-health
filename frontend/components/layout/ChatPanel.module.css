@@ -1,0 +1,9 @@
+.chatPanel {
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: -4px 0 20px rgba(13, 148, 136, 0.06);
+}

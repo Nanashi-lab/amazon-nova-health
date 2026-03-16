@@ -1,0 +1,136 @@
+/* Clinical Clarity Design System — NovaHealth */
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #F0F7F7;
+  --bg-secondary: #FFFFFF;
+  --bg-surface: #E8F4F4;
+  --bg-dark: #0A2628;
+
+  /* Primary */
+  --primary: #0D9488;
+  --primary-light: #14B8A9;
+  --primary-dark: #0F766E;
+
+  /* Accent */
+  --accent: #0EA5E9;
+  --accent-soft: #E0F2FE;
+
+  /* Status */
+  --success: #059669;
+  --success-soft: #D1FAE5;
+  --warning: #D97706;
+  --warning-soft: #FEF3C7;
+  --critical: #E11D48;
+  --critical-soft: #FFE4E6;
+  --info: #0EA5E9;
+  --info-soft: #E0F2FE;
+
+  /* Text */
+  --text-primary: #0F2D2D;
+  --text-secondary: #2D4A4A;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+
+  /* Borders & Shadows */
+  --border: #CBD5D5;
+  --border-focus: #0D9488;
+  --shadow-sm: 0 1px 2px rgba(13, 148, 136, 0.05);
+  --shadow-md: 0 4px 6px rgba(13, 148, 136, 0.08);
+  --shadow-lg: 0 10px 25px rgba(13, 148, 136, 0.12);
+
+  /* Fonts */
+  --font-body: var(--font-instrument-sans), 'Instrument Sans', system-ui, sans-serif;
+  --font-heading: var(--font-dm-serif-display), 'DM Serif Display', Georgia, serif;
+  --font-mono: var(--font-dm-mono), 'DM Mono', 'Courier New', monospace;
+
+  /* Z-index scale */
+  --z-base: 0;
+  --z-above: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-overlay: 50;
+  --z-modal: 100;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+/* Body text */
+p {
+  text-wrap: pretty;
+}
+
+/* Tabular numerals for data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Monospace utility */
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form elements */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}

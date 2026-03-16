@@ -1,0 +1,120 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  gap: 4px;
+}
+
+.user {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.assistant {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.meta {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding-left: 4px;
+}
+
+.bubble {
+  padding: 10px 14px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.userBubble {
+  background: var(--primary);
+  color: var(--text-inverse);
+  border-radius: 16px 16px 4px 16px;
+}
+
+.aiBubble {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 16px 16px 16px 4px;
+}
+
+.content {
+  font-size: 0.875rem;
+  white-space: pre-wrap;
+}
+
+.timestamp {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  padding: 0 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Inline vitals */
+.vitalsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.vitalsChip {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.vitalsLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.vitalsValue {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* File attachments */
+.attachments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.fileCard {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-surface);
+  border-radius: 8px;
+  padding: 6px 10px;
+  max-width: 200px;
+}
+
+.userBubble .fileCard {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.fileIcon {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.fileName {
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

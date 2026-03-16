@@ -1,0 +1,135 @@
+.container {
+  padding: 24px 32px;
+  max-width: 900px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-bottom: 16px;
+  transition: color 0.15s ease;
+}
+
+.backButton:hover {
+  color: var(--primary-dark);
+}
+
+.header {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.metaItem {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.metaDivider {
+  color: var(--text-muted);
+}
+
+.content {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.7;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.content h1 { font-size: 1.4rem; }
+.content h2 { font-size: 1.2rem; }
+.content h3 { font-size: 1.05rem; }
+
+.content p {
+  margin-bottom: 1em;
+}
+
+.content ul,
+.content ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.content li {
+  margin-bottom: 0.4em;
+}
+
+.content code {
+  background: var(--bg-surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+.content pre {
+  background: var(--bg-surface);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1em;
+}
+
+.content pre code {
+  background: none;
+  padding: 0;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.content th,
+.content td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.content th {
+  background: var(--bg-surface);
+  font-weight: 600;
+}
+
+.content blockquote {
+  border-left: 3px solid var(--primary);
+  padding-left: 16px;
+  margin: 1em 0;
+  color: var(--text-secondary);
+}

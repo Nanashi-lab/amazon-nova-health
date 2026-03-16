@@ -1,0 +1,197 @@
+.container {
+  padding: 24px 32px;
+  max-width: 960px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.countBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.countBadge.critical {
+  background: var(--critical-soft);
+  color: var(--critical);
+}
+
+.countBadge.caution {
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+
+.countBadge.stable {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.countBadge.monitoring {
+  background: var(--info-soft);
+  color: var(--info);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card */
+.card {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.patientName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.patientMeta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Status */
+.statusBadge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.statusBadge.critical {
+  background: var(--critical-soft);
+  color: var(--critical);
+}
+
+.statusBadge.caution {
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+
+.statusBadge.stable {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.statusBadge.monitoring {
+  background: var(--info-soft);
+  color: var(--info);
+}
+
+/* Condition */
+.condition {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Vitals row */
+.vitalsRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vital {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  background: var(--bg-surface);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.vitalLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.vitalValue {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Footer */
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.physician {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.medCount {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}

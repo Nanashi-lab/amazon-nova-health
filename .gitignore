@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environment
+backend/.venv/
+.venv/
+venv/
+
+# Next.js (root-level, frontend/ has its own)
+.next/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# pytest
+.pytest_cache/
+
+# Docker volumes
+pgdata/
+
+# Personal/planning files
+.personal/
+
+# Claude Code
+.claude/

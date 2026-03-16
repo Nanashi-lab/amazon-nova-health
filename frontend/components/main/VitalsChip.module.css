@@ -1,0 +1,63 @@
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  min-width: 120px;
+  min-height: 70px;
+  transition: box-shadow 0.2s ease;
+}
+
+.chip:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Status variants */
+.normal {
+  background: var(--accent-soft);
+}
+
+.warning {
+  background: var(--warning-soft);
+}
+
+.critical {
+  background: var(--critical-soft);
+}
+
+/* Icon */
+.icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+/* Text content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.unit {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 3px;
+}

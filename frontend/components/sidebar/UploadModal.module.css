@@ -1,0 +1,253 @@
+/* Upload Modal Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 38, 40, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+}
+
+.modal {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  width: 480px;
+  max-width: 90vw;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.closeBtn:hover {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+/* Body */
+.body {
+  padding: 24px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dropzone */
+.dropzone {
+  width: 100%;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.dropzone:hover {
+  border-color: var(--primary);
+  background: rgba(13, 148, 136, 0.04);
+}
+
+.dropzoneActive {
+  border-color: var(--primary);
+  background: rgba(13, 148, 136, 0.08);
+}
+
+.dropzoneIcon {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.dropzoneText {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.dropzoneHint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.hiddenInput {
+  display: none;
+}
+
+/* Pipeline Steps */
+.pipeline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fileName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--bg-surface);
+}
+
+.stepIcon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+.stepPending {
+  background: var(--border);
+  color: var(--text-muted);
+}
+
+.stepActive {
+  background: var(--primary);
+  color: var(--text-inverse);
+}
+
+.stepDone {
+  background: var(--success);
+  color: var(--text-inverse);
+}
+
+.stepLabel {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stepLabelActive {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.stepLabelDone {
+  color: var(--success);
+  font-weight: 500;
+}
+
+/* Progress Bar */
+.progressBar {
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: width 0.2s ease-out;
+}
+
+/* Completion */
+.completion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--success-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmarkIcon {
+  color: var(--success);
+  font-size: 1.5rem;
+}
+
+.completionText {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.completionSub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.doneBtn {
+  margin-top: 8px;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: var(--text-inverse);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.doneBtn:hover {
+  background: var(--primary-dark);
+}
+
+/* Error */
+.errorIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--critical-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--critical);
+}
