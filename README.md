@@ -20,6 +20,10 @@ NovaHealth replaces click-heavy workflows with a conversational AI agent. Instea
 
 The agent handles both operations in one turn — admits the patient, prescribes the medication, and checks for allergy conflicts before confirming. The nurse can also speak this naturally using voice mode, hands-free.
 
+![Dashboard — Patient view with chat and tool call cards](screenshots/001.png)
+
+![Semantic search and document viewer](screenshots/002.png)
+
 ## Architecture
 
 ```
