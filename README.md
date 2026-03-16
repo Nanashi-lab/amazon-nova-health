@@ -6,6 +6,8 @@
 ![Track](https://img.shields.io/badge/Track-Professional%20Developer-green)
 ![Entry](https://img.shields.io/badge/Entry-Solo-orange)
 
+**[Watch the Demo Video](https://vimeo.com/1173910181)** | **[Devpost](https://devpost.com/software/nova-health)** | **[Blog Post](https://gist.github.com/Nanashi-lab/1560bb70347f70e1850d67f87c6e819b)**
+
 ## The Problem
 
 Nurses spend **25% of their shift on administrative tasks** — documenting patient information, searching records, logging medications, updating charts. That's 3 hours in a 12-hour shift spent on screens instead of patients.
